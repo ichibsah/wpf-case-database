@@ -37,5 +37,10 @@ namespace CaseDatabase
             PageAnimationHelper.SlideToRight(this, this.casesView);
             PageAnimationHelper.SlideFromLeft(this, this.login);
         }
+
+        private void Login_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
