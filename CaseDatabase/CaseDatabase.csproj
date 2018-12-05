@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="erminas SmartAPI">
+      <HintPath>..\..\smartapi\SmartAPI\erminas.SmartAPI\bin\Release\erminas SmartAPI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -60,6 +63,7 @@
       <DependentUpon>InfoPopup.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="SessionContext.cs" />
     <Compile Include="ValueConverters\Negate.cs" />
     <Page Include="Cases.xaml">
       <SubType>Designer</SubType>

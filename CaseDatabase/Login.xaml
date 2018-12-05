@@ -53,16 +53,16 @@
 
             <StackPanel>
                 <Image x:Name="image" Height="100" Source="Static/logo.png" />
-                <Label>Agent ID:</Label>
-                <TextBox x:Name="agentId" Text="{Binding AgentId}" />
+                <Label>Username:</Label>
+                <TextBox x:Name="username" />
                 <Label>Password:</Label>
-                <PasswordBox x:Name="password" /> <!-- Not bound to model for security reasons.  -->
+                <PasswordBox x:Name="password" /> 
                 <Button x:Name="login" Margin="4,10,4,4" Content="Login" Click="login_Click"/>
             </StackPanel>
         </Border>
         
         <!-- Success/error that will be animated in -->
-        <local:InfoPopup x:Name="infoPopup" Opacity="0" Text="Access Granted" />
+        <local:InfoPopup x:Name="infoPopup" Opacity="0" Text="Access Granted" Loaded="InfoPopup_Loaded" Visibility="Hidden"/>
     </Grid>
     
 

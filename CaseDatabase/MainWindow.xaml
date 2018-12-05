@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:CaseDatabase"
         mc:Ignorable="d"
         x:Name="Window"
-        Title="CIA Terminal" Height="500" Width="800">
+        Title="Reddot Terminal" Height="500" Width="800">
     <Window.Background>
         <ImageBrush Stretch="UniformToFill" 
                         ImageSource="Static/world.jpg" 

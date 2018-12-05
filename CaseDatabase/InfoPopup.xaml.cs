@@ -36,7 +36,8 @@ namespace CaseDatabase
 
         public async Task ShowAsync(PopupStyle style)
         {
-            if (style == PopupStyle.Error)
+            Visibility = Visibility.Visible;
+             if (style == PopupStyle.Error)
             {
                 //Show error style.
                 Text = "ACCESS DENIED";
@@ -52,6 +53,7 @@ namespace CaseDatabase
                 var storyBoard = (Storyboard)this.FindResource("fadeInAndHide");
                 await storyBoard.BeginAsync(this);
             }
+            Visibility = Visibility.Hidden;
         }
 
         public enum PopupStyle

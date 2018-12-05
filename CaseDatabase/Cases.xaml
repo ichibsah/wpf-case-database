@@ -18,7 +18,8 @@
         <DockPanel>
             <Button DockPanel.Dock="Top" x:Name="back" Content="&lt; Back" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top" Click="back_Click"/>
             <Border DockPanel.Dock="Left" BorderThickness="1" BorderBrush="#ddd">
-                <Label HorizontalAlignment="Center" VerticalAlignment="Center">[Suspects here]</Label>
+
+                <ListBox SelectedIndex="0" Width="auto" Name="ProjectsCombo" Height="auto" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0" />
             </Border>
             <Border BorderThickness="1" BorderBrush="#ddd">
                 <Label HorizontalAlignment="Center" VerticalAlignment="Center">[Case info here]</Label>

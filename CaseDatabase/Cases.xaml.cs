@@ -25,7 +25,28 @@ namespace CaseDatabase
         public Cases()
         {
             InitializeComponent();
+            GetComboProjectsSample();
         }
+
+        private void GetComboProjects()
+        {
+            foreach (var item in SessionContext.CurrentUsersProjects)
+            {
+                ProjectsCombo.Items.Add(item.ToString());
+            }
+            
+        }
+
+        private void GetComboProjectsSample()
+        {
+            
+            ProjectsCombo.Items.Add("test");
+            ProjectsCombo.Items.Add("tfl");
+            ProjectsCombo.Items.Add("postbank");
+
+
+        }
+
 
         private void back_Click(object sender, RoutedEventArgs e)
         {
