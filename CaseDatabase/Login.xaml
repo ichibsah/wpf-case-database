@@ -57,7 +57,7 @@
                 <TextBox x:Name="username" />
                 <Label>Password:</Label>
                 <PasswordBox x:Name="password" /> 
-                <Button x:Name="login" Margin="4,10,4,4" Content="Login" Click="login_Click"/>
+                <Button x:Name="login" Margin="4,10,4,4" Content="Login" Click="Login_Click"/>
             </StackPanel>
         </Border>
         

@@ -22,14 +22,24 @@ namespace CaseDatabase
     {
         public event EventHandler BackClicked;
 
+        //public delegate void StudentSelectionHandler(object sender, StudentEventArgs e);
+        //public event StudentSelectionHandler StudentSelected;
+
+        
         public Cases()
         {
             InitializeComponent();
-            GetComboProjectsSample();
+            GetComboProjects();
         }
 
-        private void GetComboProjects()
+        private void Login_LoginSuccess(object sender, EventArgs e)
         {
+            GetComboProjects(); 
+        }
+
+        public void GetComboProjects()
+        {
+            ProjectsCombo.Items.Clear();
             foreach (var item in SessionContext.CurrentUsersProjects)
             {
                 ProjectsCombo.Items.Add(item.ToString());
@@ -37,9 +47,9 @@ namespace CaseDatabase
             
         }
 
-        private void GetComboProjectsSample()
+        public void GetComboProjectsSample()
         {
-            
+            ProjectsCombo.Items.Clear();
             ProjectsCombo.Items.Add("test");
             ProjectsCombo.Items.Add("tfl");
             ProjectsCombo.Items.Add("postbank");

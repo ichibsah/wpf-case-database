@@ -26,7 +26,7 @@
     <Canvas>
         <local:Login x:Name="login" 
                      Canvas.Left="0" 
-                     Canvas.Top="0" 
+                     Canvas.Top="10" 
                      Height="{Binding ElementName=Window, Path=ActualHeight}"
                      Width="{Binding ElementName=Window, Path=ActualWidth}"
                      LoginSuccess="login_LoginSuccess" Loaded="Login_Loaded" />

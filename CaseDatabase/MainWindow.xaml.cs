@@ -29,12 +29,14 @@ namespace CaseDatabase
         public void login_LoginSuccess(object sender, EventArgs e)
         {
             PageAnimationHelper.SlideFromRight(this, this.casesView);
+            this.casesView.GetComboProjects();
             PageAnimationHelper.SlideToLeft(this, this.login);
         }
 
         private void casesView_BackClicked(object sender, EventArgs e)
         {
             PageAnimationHelper.SlideToRight(this, this.casesView);
+            this.casesView.GetComboProjectsSample();
             PageAnimationHelper.SlideFromLeft(this, this.login);
         }
 

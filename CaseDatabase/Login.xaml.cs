@@ -21,9 +21,10 @@ namespace CaseDatabase
     public partial class Login : UserControl
     {
         private LoginModel _model;
+        #region Event Members
         public event EventHandler LoginSuccess;
         public event EventHandler LoginFailure;
-        
+        #endregion
         public Login()
         {
             InitializeComponent();
@@ -32,7 +33,7 @@ namespace CaseDatabase
             this.DataContext = _model;
         }
 
-        private async void login_Click(object sender, RoutedEventArgs e)
+        private async void Login_Click(object sender, RoutedEventArgs e)
         {
             SessionContext.Username = username.Text;
             SessionContext.Password = password.Password;
